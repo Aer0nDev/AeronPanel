@@ -1,0 +1,12 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Yuna Panel</title><link rel="stylesheet" href="/style.css"></head><body>
+<header><div class="brand"><div class="logo">⚡</div><b>Yuna Panel</b></div><div class="avatar">●</div></header>
+<main><section class="hero"><div class="clock" id="clock"></div><h1>Keys Registered</h1><p>Philippine Time: <span id="time"></span></p></section>
+<section class="card create"><h2>🔑 Generate License Key</h2><div class="grid">
+<label>GAME<select id="game"><option>CODM GLOBAL</option><option>CODM GARENA</option><option>PUBG</option><option>FREE FIRE</option><option>CUSTOM</option></select></label>
+<label>DURATION<select id="duration"><option value="1">1d — $1</option><option value="2">2d — $2</option><option value="3">3d — $3</option><option value="7">7d — $7</option><option value="15">15d — $15</option><option value="30" selected>30d — $30</option><option value="60">60d — $60</option><option value="90">90d — $90</option><option value="365">1y — $365</option></select></label>
+<label>MAX DEVICES<input id="devices" type="number" min="1" max="100" value="1"></label>
+<label>PREFIX<input id="prefix" placeholder="YUNA"></label>
+<label class="wide">CUSTOM KEY (optional)<input id="custom" placeholder="Leave blank to generate securely"></label>
+</div><div class="estimate" id="estimate"></div><button onclick="createKey()">⚡ Create License</button><div id="notice"></div></section>
+<section class="list"><div class="listhead"><h2>Active & Registered Keys</h2><button class="ghost" onclick="load()">↻ Refresh</button></div><div id="keys"></div></section>
+</main><script src="/app.js"></script></body></html>
